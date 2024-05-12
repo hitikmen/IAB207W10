@@ -1,3 +1,4 @@
+from travel import create_app
 
 # A very simple Flask Hello World app for you to get started with...
 
@@ -9,3 +10,7 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello from Flask!'
 
+=======
+if __name__=='__main__':
+    n_app=create_app()
+    n_app.run(debug=True)
